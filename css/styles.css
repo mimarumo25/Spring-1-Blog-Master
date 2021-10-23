@@ -1,0 +1,33 @@
+/* Auto Layout */
+
+body {
+    /* Block Master */
+    position: relative;
+    /* Background */
+    background: #0F0E17;
+}
+
+.alto {
+    height: 30vh;
+}
+
+.color {
+    background: #0F0E17;
+}
+
+.targetas {
+    width: 220px;
+    height: 330px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0px;
+}
+
+.carst {
+    flex: none;
+    order: 4;
+    flex-grow: 0;
+    margin: 0px 10px;
+}
