@@ -8,26 +8,69 @@ body {
 }
 
 .alto {
-    height: 30vh;
+    height: 280px;
 }
 
-.color {
-    background: #0F0E17;
-}
-
-.targetas {
-    width: 220px;
-    height: 330px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
-    padding: 0px;
+img {
+    cursor: pointer;
 }
 
 .carst {
     flex: none;
     order: 4;
     flex-grow: 0;
-    margin: 0px 10px;
+}
+
+.calif {
+    position: absolute;
+    top: 10px;
+    height: 64px;
+    width: 114px;
+    border-radius: 0 50px 50px 0;
+    background-color: rgba(0, 0, 0, 0.473);
+}
+
+#masValoradas {
+    cursor: pointer;
+}
+
+#menosValoradas {
+    cursor: pointer;
+}
+
+.califTexto {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.califTexto p {
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 24px;
+    flex: 1 1 auto;
+}
+
+.califTexto i {
+    font-size: 30px;
+    margin-right: 10px;
+    margin-bottom: 13px;
+    margin-left: 10px;
+    color: yellow;
+}
+
+h1 {
+    color: white;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+colorTable {
+    color: white;
+}
+
+.color-black {
+    color: black;
 }
