@@ -1,0 +1,28 @@
+{
+    "usuario": [{}],
+    "movies": [{
+            "nombre": "Mi otra yo",
+            "votos": "5",
+            "urlImagen": "https://pics.filmaffinity.com/Lokillo_en_Mi_otra_yo-124272556-large.jpg",
+            "urlTrailer": "arnnKcelGUc",
+            "descripcion": "immy Barón tiene programa en TV, llena todos los teatros con su espectáculo y alcanzó la cima del éxito con una fórmula fácil: hacer humor a partir del machismo y alentando la guerra de sexos para mostrar a la mujer siempre débil, inferior y perdedora. Jimmy se ríe de la lucha por las reivindicaciones femeninas y su búsqueda de la igualdad, hasta que un hecho inesperado le pone la vida patas arriba y le cambia la película. A partir de ahí, el comediante se debate entre un problema judicial y un enemigo poderoso que lo obligan a convertirse en “Paola Linares” y lo llevan a la cárcel de mujeres a vivir y a sufrir como una interna más. Jimmy siente que protagoniza el más cruel de los chistes, pero poco a poco va entendiendo la lección. Su nueva vida como “reclusa”, afrontar el mundo desde una posición femenina, compartir con mujeres condenadas, luchadoras, víctimas, sobrevivientes y muy humanas, y conocer a la fiscal que lleva su caso, son vivencias que sacan toda la basura que tiene en la cabeza, hasta hacerlo entender que solo el poder y la fuerza de las mujeres podían rescatarlo de sí mismo.",
+            "id": "SLGioSM"
+        },
+        {
+            "nombre": "Lucas",
+            "votos": "9",
+            "urlImagen": "https://image.tmdb.org/t/p/w1280/jTswp6KyDYKtvC52GbHagrZbGvD.jpg",
+            "urlTrailer": "GYpLMyLMEXw",
+            "descripcion": "Luca es un monstruo marino que vive debajo de un pueblo  emprenden una aventura entre humanos que odian a los monstruos.",
+            "id": "w8tK5_J"
+        },
+        {
+            "nombre": "pepa ping",
+            "votos": "3.2",
+            "urlImagen": "https://sixgradosdeseparacion.files.wordpress.com/2016/01/peppa-pig-2.jpg?w=640",
+            "urlTrailer": "MQyc6Du-S48",
+            "descripcion": "Serie animada de los cerdos ",
+            "id": "Z4HOJif"
+        }
+    ]
+}
