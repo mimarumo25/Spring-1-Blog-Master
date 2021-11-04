@@ -41,8 +41,7 @@
                         <input class="form-control me-2" type="search" id="search" placeholder="Busca tu pelicula favorita" aria-label="Search">
                         <button class="btn btn-outline-success" type="submit">Buscar</button>
                     </form>
-                    <button class="btn btn-primary ml-1" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i
-                            class="fas fa-user-tie"></i>
+                    <button class="btn btn-primary ml-1" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fas fa-user-tie"></i>
                     </button>
 
                 </div>
@@ -87,7 +86,7 @@
                             </div>
                         </div>
                         <img src="..." class="card-img-top" alt="Pelicula">
-                        
+
                     </div>
                 </div>
             </template>
@@ -95,123 +94,121 @@
 
     </main>
     <div class="container p-5">
-        <!--<div class="lds-ring text-c align-items-center">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-        </div>-->
         <div id="request-target">
-
             <footer class="text-center h-5% bg-secondary rounded-pill">
                 <h2 class="boder-fix">Todos los Derechos Reservados 2021</h2>
             </footer>
         </div>
-
-        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
-            <div class="offcanvas-header">
-                <h5 id="offcanvasRightLabel">Datos de Usuario</h5>
-                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-            </div>
-            <div class="offcanvas-body">
-                <div class="coantainer">
-                    <div id="inicioSeccio">
-                        <h1 class="text-center color-black">Login Sistema</h1>
-                        <form action="">
-                            <label for="user">Usuario:</label>
-                            <input type="text" name="user" class="form-control py-3" id="user" placeholder="Ingrese su email">
-                            <label for="password">Password:</label>
-                            <input type="password" name="password" class="form-control py-3" id="password" placeholder="Ingrese su password">
-                        </form>
-                        <div class="d-grid gap-2 col-6 mx-auto pt-3">
-                            <button class="btn btn-primary rounded-pill" type="button" id="seccion">INICIAR SECCION</button>
-                        </div>
-                        <p>Si aun no cuanta con una cuanta por favor <button class="btn btn-primary rounded-pill" data-bs-toggle="modal" data-bs-target="#modalRegistro"> Registrarse aqui</button></p>
-                    </div>
-                    <div id="Perfil" class="pefiles" hidden>
-
-                    </div>
-                </div>
-
-            </div>
+    </div>
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+            <h5 id="offcanvasRightLabel">Datos de Usuario</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
-        <!-- Modal Registro-->
-        <div class="modal fade" id="modalRegistro" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-lg">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Registro</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <div class="offcanvas-body">
+            <div class="coantainer">
+                <div id="inicioSeccio">
+                    <h1 class="text-center color-black">Login Sistema</h1>
+                    <form action="">
+                        <label for="user">Usuario:</label>
+                        <input type="text" name="user" class="form-control py-3" id="user" placeholder="Ingrese su email">
+                        <label for="password">Password:</label>
+                        <input type="password" name="password" class="form-control py-3" id="password" placeholder="Ingrese su password">
+                    </form>
+                    <div class="d-grid gap-2 col-6 mx-auto pt-3">
+                        <button class="btn btn-primary rounded-pill" type="button" id="seccion">INICIAR SECCION</button>
                     </div>
-                    <div class="modal-body" id="modal">
-                        <div class="row">
-                            <div class="col-6">
-                                <label for="identifica">Identificación:</label>
-                                <input type="number" class="form-control" id="identifica" name="identifica" required placeholder="Ingrese su Identificación" required>
-                            </div>
-                            <div class="col-6">
-                                <label for="nombres">Nombre Completo:</label>
-                                <input type="text" class="form-control" id="nombres" name="nombres" required placeholder="Ingrese su Nombre Completo" required>
-                            </div>
+                    <p>Si aun no cuanta con una cuanta por favor <button class="btn btn-primary rounded-pill" data-bs-toggle="modal" data-bs-target="#modalRegistro"> Registrarse aqui</button></p>
+                </div>
+                <div id="Perfil" class="pefiles" hidden>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- Modal Registro-->
+    <div class="modal fade" id="modalRegistro" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Registro</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" id="modal">
+                    <div class="row">
+                        <div class="col-6">
+                            <label for="identifica">Identificación:</label>
+                            <input type="number" class="form-control" id="identifica" name="identifica" required placeholder="Ingrese su Identificación" required>
                         </div>
-                        <div class="row">
-                            <div class="col-6">
-                                <label for="direccion">Dirección:</label>
-                                <input type="text" class="form-control" id="direccion" name="direccion" placeholder="Ingrese su Dirreción" required>
-                            </div>
-                            <div class="col-6">
-                                <label for="telefono">Telefono:</label>
-                                <input type="number" class="form-control" id="telefono" name="telefono" placeholder="Ingrese su Telefono" required>
-                            </div>
+                        <div class="col-6">
+                            <label for="nombres">Nombre Completo:</label>
+                            <input type="text" class="form-control" id="nombres" name="nombres" required placeholder="Ingrese su Nombre Completo" required>
                         </div>
-                        <div class="row">
-                            <div class="col-6">
-                                <label for="correo">Correo:</label>
-                                <input type="email" class="form-control" id="correo" name="correo" placeholder="Ingrese su Correo" required>
-                            </div>
-                            <div class="col-6">
+                    </div>
+                    <div class="row">
+                        <div class="col-6">
+                            <label for="direccion">Dirección:</label>
+                            <input type="text" class="form-control" id="direccion" name="direccion" placeholder="Ingrese su Dirreción" required>
+                        </div>
+                        <div class="col-6">
+                            <label for="telefono">Telefono:</label>
+                            <input type="number" class="form-control" id="tTelefono" name="telefono" placeholder="Ingrese su Telefono" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6">
+                            <label for="correo">Correo:</label>
+                            <input type="email" class="form-control" id="cCorreo" name="correo" placeholder="Ingrese su Correo" required>
+                        </div>
+                        <div class="col-6">
+                            <div id="divfoto">
                                 <label class="form-label" for="foto">Foto:</label>
                                 <input type="file" src="" name="foto" id="inputFotos" class="form-control" onchange="getFotos();">
+                                <input type="text" id="urlActualizar" hidden>
                                 <progress id="img-upload-bar" value="0" max="100" style="width: 100%" style="height: 10%" class="my-2"></progress>
                             </div>
                         </div>
                     </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-danger rounded-pill" data-bs-dismiss="modal">Cerrar</button>
-                        <button type="button" class="btn btn-primary rounded-pill guardaData">Guardar</button>
-                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger rounded-pill" data-bs-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-primary rounded-pill guardaData" id="bootonModal">Guardar</button>
+                    <button type="button" class="btn btn-warning rounded-pill ActualiData" id="ActuaModal" hidden>Actualizar los datos</button>
                 </div>
             </div>
         </div>
+    </div>
 
-        <script src="./js/script.js" type="module"></script>
-        <script src="./js/usuarios.js"></script>
-        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="./js/script.js" type="module"></script>
+    <script src="./js/usuarios.js"></script>
 
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 
-        <script src="https://kit.fontawesome.com/d88b55dbbc.js" crossorigin="anonymous"></script>
-        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
 
-        <script>
-            var swiper = new Swiper('.mySwiper', {
-                spaceBetween: 30,
-                centeredSlides: true,
-                autoplay: {
-                    delay: 2500,
-                    disableOnInteraction: false,
-                },
-                pagination: {
-                    el: '.swiper-pagination',
-                    clickable: true,
-                },
-                navigation: {
-                    nextEl: '.swiper-button-next',
-                    prevEl: '.swiper-button-prev',
-                },
-            });
-        </script>
+    <script src="https://kit.fontawesome.com/d88b55dbbc.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script>
+        var swiper = new Swiper('.mySwiper', {
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
 
 </body>
 

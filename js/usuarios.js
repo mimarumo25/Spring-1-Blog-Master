@@ -45,8 +45,8 @@ const guardarDatos = async() => {
     let identifica = document.getElementById('identifica').value;
     let nombre = document.getElementById('nombres').value;
     let direccion = document.getElementById('direccion').value;
-    let telefono = document.getElementById('telefono').value;
-    let correo = document.getElementById('correo').value;
+    let telefono = document.getElementById('tTelefono').value;
+    let correo = document.getElementById('cCorreo').value;
 
 
     let file = getFotos();
@@ -169,22 +169,40 @@ document.addEventListener("click", async(e) => {
         let id = e.target.id
         let data = await getdata();
         let arrr = data.find(p => p.id === id);
-        let {
-            identifica,
-            nombre,
-            telefono,
-            correo,
-            direccion
-        } = arrr;
+        let { identifica, nombre, telefono, correo, direccion, imagen } = arrr;
 
         document.getElementById('identifica').value = identifica
         document.getElementById('nombres').value = nombre
         document.getElementById('direccion').value = direccion
-        document.getElementById('telefono').value = 'telefono'
-        document.getElementById('correo').value = correo
+        document.getElementById('tTelefono').value = telefono
+        document.getElementById('cCorreo').value = correo
+            //document.getElementById('inputFotos').setAttribute('src', imagen) = correo
         document.getElementById('identifica').setAttribute('readonly', 'true');
-        document.getElementById("inputFotos").setAttribute('readonly', 'true');
+        document.getElementById("urlActualizar").value = imagen;
+        document.getElementById('bootonModal').setAttribute('hidden', '')
+        document.getElementById('ActuaModal').setAttribute('name', id)
+        document.getElementById('ActuaModal').removeAttribute('hidden')
+        document.getElementById('divfoto').setAttribute('hidden', '')
 
+    }
+})
+document.addEventListener("click", async(e) => {
+    if (e.target.matches(".ActualiData")) {
+
+        let identifica = document.getElementById('identifica').value;
+        let nombre = document.getElementById('nombres').value;
+        let direccion = document.getElementById('direccion').value;
+        let telefono = document.getElementById('tTelefono').value;
+        let correo = document.getElementById('cCorreo').value;
+        let imagen = document.getElementById('urlActualizar').value;
+        let id = e.target.name
+
+        if (identifica !== "" && nombre !== "" && direccion !== "" && telefono !== "" && correo !== "") {
+            let datos = { identifica, nombre, direccion, telefono, correo, imagen }
+
+            let upd = await axios.put(API_URL + '/' + id, datos);
+            console.log(upd);
+        }
 
     }
 })
